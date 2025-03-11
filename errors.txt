@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 15: Line is indented, but the preceding play music statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    scene biblioteca
+File "game/script.rpy", line 17: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    $ nome = renpy.input("QUAL O SEU NOME?:")
     ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Tue Feb 25 16:15:23 2025
+Tue Mar 11 14:28:17 2025

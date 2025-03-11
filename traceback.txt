@@ -1,22 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 54, in script
-    jump praia
-ScriptError: could not find label 'praia'.
+  File "game/script.rpy", line 25, in script
+    $ idade = int(idade)
+  File "game/script.rpy", line 25, in <module>
+    $ idade = int(idade)
+ValueError: invalid literal for int() with base 10: 'Fabiano'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 54, in script
-    jump praia
-  File "C:\Users\Fabiano\Documents\renpy-8.3.4-sdk\renpy\ast.py", line 1705, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\Fabiano\Documents\renpy-8.3.4-sdk\renpy\script.py", line 1103, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'praia'.
+  File "game/script.rpy", line 25, in script
+    $ idade = int(idade)
+  File "C:\Users\Fabiano\Documents\renpy-8.3.4-sdk\renpy\ast.py", line 827, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Fabiano\Documents\renpy-8.3.4-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 25, in <module>
+    $ idade = int(idade)
+ValueError: invalid literal for int() with base 10: 'Fabiano'
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.4.24120703
 jogo1 1.0
-Tue Feb 25 16:07:31 2025
+Tue Mar 11 14:29:03 2025
